@@ -1,49 +1,22 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BloodBankController;
+use App\Http\Controllers\index;
+use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\DonorsController;
+use App\Http\Controllers\PatientsController;
+use App\Http\Controllers\BloodStockController;
+use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\loginController;
+use App\Http\Controllers\SignUpController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('index',function(){
-    return view('index');
-});
-
-Route::get('login',function(){
-    return view('login');
-});
-
-Route::get('Donor',function(){
-    return view('Donor');
-});
-
-Route::get('ContactUs',function(){
-    return view('ContactUs');
-});
-
-Route::get('Blood_Stock',function(){
-    return view('Blood_Stock');
-});
-
-Route::get('AboutUs',function(){
-    return view('AboutUs');
-});
-
-Route::get('Privacy',function(){
-    return view('Privacy');
-});
-
-Route::get('signUp',function(){
-    return view('signUp');
-});
-
-Route::get('TermAndService',function(){
-    return view('TermAndService');
-});
-
-Route::get('Patient',function(){
-    return view('Patient');
-});
-
+Route::get('/index',[index::class,'index']);
+Route::get('/AboutUs',[AboutUsController::class,'About']);
+Route::get('/Donor',[DonorsController::class,'Donors']);
+Route::get('/Patient',[patientsController::class,'Patients']);
+Route::get('/Blood_Stock',[BloodStockController::class,'BloodStock']);
+Route::get('/ContactUs',[ContactUsController::class,'Contactus']);
+Route::get('/login',[loginController::class,'Login']);
+Route::get('/signUp',[SignUpController::class,'Signup']);
 

@@ -13,8 +13,10 @@
 
 <title>د ویني دمدیریت سیستم</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
 <link rel="stylesheet" href="{{ asset('css/style.css')}}">
+
 </head>
 
 <body>
@@ -55,7 +57,8 @@
     </nav>
     </div>
     <div>
-      <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+     <i class='fa-solid fa-bell'></i>
+     <i class="fa-solid fa-circle-user"></i>
 
     </div>
 </header>
